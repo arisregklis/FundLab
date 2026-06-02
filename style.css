@@ -536,12 +536,32 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 800; letter-spac
 
 .form-row {
   display: grid;
-  grid-template-columns: 1fr 150px auto;
+  grid-template-columns: 1fr auto;
   gap: 10px;
   background: #fff;
   border: 1px solid rgba(255,255,255,0.18);
   border-radius: 999px;
   padding: 6px;
+}
+.form-row-name {
+  grid-template-columns: 1fr;
+  margin-bottom: 10px;
+  padding: 2px 6px;
+}
+.form-row-name input {
+  padding: 8px 14px;
+  font-size: 14px;
+}
+.form-row-contact {
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.contact-sep {
+  font-size: 13px;
+  color: var(--text-3);
+  padding: 0 4px;
+  user-select: none;
 }
 .form-row input, .form-row select {
   background: transparent;

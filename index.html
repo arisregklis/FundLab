@@ -307,8 +307,17 @@
             </label>
           </div>
 
+          <div class="form-row form-row-name">
+            <input type="text" name="name" placeholder="Το όνομά σου" required autocomplete="name" />
+          </div>
+
+          <div class="form-row form-row-contact">
+            <input type="email" name="email" placeholder="το@email.σου" autocomplete="email" />
+            <span class="contact-sep">ή</span>
+            <input type="tel" name="phone" placeholder="+30 69xxxxxxxx" autocomplete="tel" />
+          </div>
+
           <div class="form-row">
-            <input type="email" name="email" placeholder="το@email.σου" required />
             <select name="city" required>
               <option value="">Πόλη</option>
               <option>Αθήνα</option>

@@ -16,16 +16,29 @@
     const payload = {
       access_key: 'aeb566d0-0fbb-48f0-8c12-442534c89eb1',
       subject: 'FundLab Early Access — νέα εγγραφή',
+      name: (data.get('name') || '').toString().trim(),
       email: (data.get('email') || '').toString().trim(),
+      phone: (data.get('phone') || '').toString().trim(),
       role: data.get('role'),
       city: data.get('city'),
       ts: new Date().toISOString(),
     };
 
-    if (!payload.email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(payload.email)) {
-      const input = form.querySelector('input[name="email"]');
+    const emailValid = payload.email && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(payload.email);
+    const phoneValid = payload.phone.length >= 7;
+
+    if (!payload.name) {
+      const input = form.querySelector('input[name="name"]');
       input.style.outline = '2px solid #ec4899';
       input.focus();
+      return;
+    }
+    if (!emailValid && !phoneValid) {
+      const emailInput = form.querySelector('input[name="email"]');
+      const phoneInput = form.querySelector('input[name="phone"]');
+      emailInput.style.outline = '2px solid #ec4899';
+      phoneInput.style.outline = '2px solid #ec4899';
+      emailInput.focus();
       return;
     }
     if (!payload.city) {
