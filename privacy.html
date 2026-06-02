@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Πολιτική Απορρήτου — FundLab</title>
+  <meta name="description" content="Πολιτική Απορρήτου και προστασία προσωπικών δεδομένων της πλατφόρμας FundLab σύμφωνα με τον GDPR." />
+  <meta name="robots" content="noindex, follow" />
+  <link rel="canonical" href="https://fundlab.gr/privacy" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Outfit:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .privacy-hero {
+      padding: 80px 0 60px;
+      background: linear-gradient(180deg, #eef2ff 0%, #f7f8fc 100%);
+      border-bottom: 1px solid var(--border);
+    }
+    .privacy-hero .eyebrow { margin-bottom: 12px; }
+    .privacy-hero h1 { font-size: clamp(28px, 4vw, 48px); margin-bottom: 14px; }
+    .privacy-hero p { color: var(--text-2); font-size: 16px; }
+
+    .privacy-body { padding: 72px 0 100px; }
+    .privacy-content { max-width: 760px; margin: 0 auto; }
+
+    .privacy-content h2 {
+      font-size: 22px;
+      margin: 48px 0 12px;
+      padding-top: 48px;
+      border-top: 1px solid var(--border);
+      color: var(--text);
+    }
+    .privacy-content h2:first-child { border-top: none; margin-top: 0; padding-top: 0; }
+    .privacy-content h3 { font-size: 17px; margin: 24px 0 8px; color: var(--text); }
+    .privacy-content p { color: var(--text-2); margin-bottom: 16px; line-height: 1.75; }
+    .privacy-content ul { color: var(--text-2); padding-left: 24px; margin-bottom: 16px; }
+    .privacy-content ul li { margin-bottom: 8px; line-height: 1.7; }
+    .privacy-content a { color: var(--brand); text-decoration: underline; text-underline-offset: 2px; }
+    .privacy-content a:hover { color: var(--brand-hover); }
+
+    .privacy-toc {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px 32px;
+      margin-bottom: 48px;
+    }
+    .privacy-toc p { font-weight: 700; color: var(--text); margin-bottom: 12px; font-family: var(--font-display); }
+    .privacy-toc ol { color: var(--text-2); padding-left: 20px; margin: 0; }
+    .privacy-toc ol li { margin-bottom: 6px; font-size: 14px; }
+    .privacy-toc ol li a { color: var(--brand); text-decoration: none; }
+    .privacy-toc ol li a:hover { text-decoration: underline; }
+
+    .privacy-meta {
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 16px 24px;
+      font-size: 13px;
+      color: var(--text-3);
+      margin-bottom: 48px;
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--brand);
+      margin-bottom: 48px;
+    }
+    .back-link:hover { color: var(--brand-hover); }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-mark">◆</span>
+        <span class="brand-name">FundLab</span>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html#how">Πώς λειτουργεί</a>
+        <a href="index.html#audience">Για ποιους</a>
+        <a href="index.html#trust">Εμπιστοσύνη</a>
+        <a href="index.html#faq">FAQ</a>
+      </nav>
+      <a href="index.html#cta" class="btn btn-primary btn-sm">Early Access</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="privacy-hero">
+    <div class="container">
+      <span class="eyebrow">Νομικό</span>
+      <h1>Πολιτική Απορρήτου</h1>
+      <p>Πώς συλλέγουμε, χρησιμοποιούμε και προστατεύουμε τα δεδομένα σας.</p>
+    </div>
+  </section>
+
+  <!-- CONTENT -->
+  <section class="privacy-body">
+    <div class="container">
+      <div class="privacy-content">
+
+        <a href="index.html" class="back-link">← Επιστροφή στην αρχική</a>
+
+        <div class="privacy-meta">
+          Τελευταία ενημέρωση: Ιούνιος 2026 &nbsp;·&nbsp; Ισχύει από: Ιούνιος 2026
+        </div>
+
+        <div class="privacy-toc">
+          <p>Περιεχόμενα</p>
+          <ol>
+            <li><a href="#controller">Υπεύθυνος Επεξεργασίας</a></li>
+            <li><a href="#data-collected">Ποια δεδομένα συλλέγουμε</a></li>
+            <li><a href="#purpose">Σκοπός & νομική βάση επεξεργασίας</a></li>
+            <li><a href="#retention">Χρόνος διατήρησης</a></li>
+            <li><a href="#third-parties">Αποδέκτες & τρίτοι</a></li>
+            <li><a href="#transfers">Διαβίβαση εκτός ΕΕ</a></li>
+            <li><a href="#rights">Δικαιώματά σας (GDPR)</a></li>
+            <li><a href="#cookies">Cookies & τοπική αποθήκευση</a></li>
+            <li><a href="#security">Ασφάλεια δεδομένων</a></li>
+            <li><a href="#minors">Ανήλικοι</a></li>
+            <li><a href="#changes">Αλλαγές πολιτικής</a></li>
+            <li><a href="#contact">Επικοινωνία</a></li>
+          </ol>
+        </div>
+
+        <!-- 1 -->
+        <h2 id="controller">1. Υπεύθυνος Επεξεργασίας</h2>
+        <p>
+          Υπεύθυνος επεξεργασίας των προσωπικών σας δεδομένων είναι η εταιρεία
+          <strong>FundLab</strong>, με έδρα στην Αθήνα, Ελλάδα.
+        </p>
+        <p>
+          Για οποιοδήποτε ερώτημα σχετικά με την παρούσα πολιτική ή την επεξεργασία
+          των δεδομένων σας, επικοινωνήστε μαζί μας στο
+          <a href="mailto:privacy@fundlab.gr">privacy@fundlab.gr</a>.
+        </p>
+
+        <!-- 2 -->
+        <h2 id="data-collected">2. Ποια δεδομένα συλλέγουμε</h2>
+        <p>Κατά την εγγραφή στη λίστα early access συλλέγουμε:</p>
+        <ul>
+          <li><strong>Διεύθυνση email</strong> — απαραίτητη για να σας ειδοποιήσουμε όταν ανοίξει η πλατφόρμα.</li>
+          <li><strong>Ρόλος</strong> (Επαγγελματίας ή Influencer) — για να σας στείλουμε το κατάλληλο περιεχόμενο.</li>
+          <li><strong>Πόλη</strong> — για να σας ενημερώσουμε όταν είναι διαθέσιμη η περιοχή σας.</li>
+          <li><strong>Χρονική σφραγίδα</strong> εγγραφής — για λόγους αρχείου και ασφάλειας.</li>
+        </ul>
+        <p>Δεν συλλέγουμε ευαίσθητα δεδομένα (π.χ. υγεία, οικονομικά, βιομετρικά).</p>
+
+        <!-- 3 -->
+        <h2 id="purpose">3. Σκοπός & νομική βάση επεξεργασίας</h2>
+
+        <h3>Ενημέρωση για την έναρξη της πλατφόρμας</h3>
+        <p>
+          Χρησιμοποιούμε τα δεδομένα σας αποκλειστικά για να σας αποστείλουμε ένα
+          email με πρόσκληση όταν ανοίξει το FundLab στην πόλη σας.
+          Νομική βάση: <strong>ρητή συγκατάθεσή σας</strong> (άρθρο 6 παρ. 1 στοιχ. α GDPR).
+        </p>
+
+        <h3>Βελτίωση της υπηρεσίας (ανωνυμοποιημένα)</h3>
+        <p>
+          Αναλύουμε συγκεντρωτικά στατιστικά (π.χ. πόσοι ενδιαφέρονται ανά πόλη ή ρόλο)
+          για να σχεδιάσουμε την ακολουθία launch. Τα δεδομένα αυτά δεν συνδέονται με
+          φυσικά πρόσωπα. Νομική βάση: <strong>έννομο συμφέρον</strong> (άρθρο 6 παρ. 1 στοιχ. στ GDPR).
+        </p>
+
+        <!-- 4 -->
+        <h2 id="retention">4. Χρόνος διατήρησης</h2>
+        <p>
+          Τα δεδομένα σας διατηρούνται έως ότου:
+        </p>
+        <ul>
+          <li>ζητήσετε τη διαγραφή τους, ή</li>
+          <li>παρέλθουν <strong>24 μήνες</strong> από την εγγραφή χωρίς να έχει ανοίξει η πλατφόρμα στη
+            περιοχή σας, ή</li>
+          <li>ανακαλέσετε τη συγκατάθεσή σας.</li>
+        </ul>
+        <p>
+          Μετά την αποστολή της πρόσκλησης, διατηρούμε μόνο αρχεία ανωνυμοποιημένης
+          στατιστικής για εσωτερικούς σκοπούς.
+        </p>
+
+        <!-- 5 -->
+        <h2 id="third-parties">5. Αποδέκτες & τρίτοι</h2>
+        <p>
+          Δεν πουλάμε, δεν ενοικιάζουμε και δεν μοιραζόμαστε τα δεδομένα σας με τρίτους
+          για διαφημιστικούς σκοπούς. Ενδέχεται να χρησιμοποιούμε τους παρακάτω
+          εκτελούντες επεξεργασία:
+        </p>
+        <ul>
+          <li><strong>Πάροχος αποστολής email</strong> (π.χ. Mailchimp ή αντίστοιχο) — για την αποστολή
+            της πρόσκλησης early access.</li>
+          <li><strong>Πάροχος φόρμας</strong> (π.χ. Formspree / Web3Forms) — για την ασφαλή λήψη
+            των στοιχείων εγγραφής, εφόσον χρησιμοποιείται.</li>
+          <li><strong>Υποδομή φιλοξενίας</strong> — για τη λειτουργία του ιστοτόπου.</li>
+        </ul>
+        <p>
+          Με κάθε εκτελούντα επεξεργασία υπάρχει σύμβαση που διασφαλίζει τη
+          συμμόρφωσή του με τον GDPR.
+        </p>
+
+        <!-- 6 -->
+        <h2 id="transfers">6. Διαβίβαση εκτός ΕΕ</h2>
+        <p>
+          Εφόσον χρησιμοποιούνται πάροχοι εκτός ΕΕ/ΕΟΧ (π.χ. αμερικανικές
+          πλατφόρμες email), η διαβίβαση πραγματοποιείται βάσει των
+          <strong>Τυποποιημένων Συμβατικών Ρητρών</strong> (SCCs) της Ευρωπαϊκής Επιτροπής ή
+          άλλου νόμιμου μηχανισμού μεταφοράς.
+        </p>
+
+        <!-- 7 -->
+        <h2 id="rights">7. Δικαιώματά σας (GDPR)</h2>
+        <p>Σύμφωνα με τον Κανονισμό (ΕΕ) 2016/679 έχετε τα εξής δικαιώματα:</p>
+        <ul>
+          <li><strong>Πρόσβαση</strong> — να μάθετε ποια δεδομένα σας τηρούμε.</li>
+          <li><strong>Διόρθωση</strong> — να διορθώσετε ανακριβή δεδομένα.</li>
+          <li><strong>Διαγραφή</strong> — να ζητήσετε τη διαγραφή τους («δικαίωμα στη λήθη»).</li>
+          <li><strong>Περιορισμός</strong> — να περιορίσετε την επεξεργασία υπό ορισμένες προϋποθέσεις.</li>
+          <li><strong>Φορητότητα</strong> — να λάβετε τα δεδομένα σας σε δομημένη, κοινώς χρησιμοποιούμενη μορφή.</li>
+          <li><strong>Εναντίωση</strong> — να αντιταχθείτε στην επεξεργασία βάσει εννόμου συμφέροντος.</li>
+          <li><strong>Ανάκληση συγκατάθεσης</strong> — ανά πάσα στιγμή, χωρίς αναδρομική επίπτωση.</li>
+        </ul>
+        <p>
+          Για να ασκήσετε οποιοδήποτε δικαίωμα, στείλτε email στο
+          <a href="mailto:privacy@fundlab.gr">privacy@fundlab.gr</a>.
+          Απαντάμε εντός <strong>30 ημερών</strong>.
+        </p>
+        <p>
+          Έχετε επίσης το δικαίωμα να υποβάλετε καταγγελία στην
+          <a href="https://www.dpa.gr" target="_blank" rel="noopener">Αρχή Προστασίας Δεδομένων Προσωπικού Χαρακτήρα (ΑΠΔΠΧ)</a>.
+        </p>
+
+        <!-- 8 -->
+        <h2 id="cookies">8. Cookies & τοπική αποθήκευση</h2>
+        <p>
+          Ο ιστότοπος δεν χρησιμοποιεί cookies παρακολούθησης ή διαφήμισης τρίτων.
+        </p>
+        <p>
+          Κάνουμε χρήση <strong>localStorage</strong> του browser αποκλειστικά για να διατηρούμε
+          τοπικά αντίγραφο της εγγραφής σας κατά την early access φάση, ώστε να μην
+          χαθούν δεδομένα πριν την πλήρη ενεργοποίηση του backend. Αυτά τα δεδομένα
+          παραμένουν στη συσκευή σας και δεν αποστέλλονται αυτόματα πουθενά.
+        </p>
+        <p>
+          Εφόσον ενσωματωθούν αναλυτικά εργαλεία (π.χ. Plausible ή Google Analytics)
+          στο μέλλον, η παρούσα πολιτική θα ενημερωθεί αναλόγως.
+        </p>
+
+        <!-- 9 -->
+        <h2 id="security">9. Ασφάλεια δεδομένων</h2>
+        <p>
+          Εφαρμόζουμε κατάλληλα τεχνικά και οργανωτικά μέτρα για την προστασία
+          των δεδομένων σας από μη εξουσιοδοτημένη πρόσβαση, τροποποίηση, αποκάλυψη
+          ή καταστροφή. Η επικοινωνία με τους διακομιστές μας γίνεται αποκλειστικά
+          μέσω κρυπτογραφημένης σύνδεσης HTTPS.
+        </p>
+
+        <!-- 10 -->
+        <h2 id="minors">10. Ανήλικοι</h2>
+        <p>
+          Η υπηρεσία απευθύνεται σε άτομα άνω των <strong>16 ετών</strong>. Δεν συλλέγουμε
+          εν γνώσει μας δεδομένα από ανηλίκους. Εάν μάθουμε ότι έχουμε λάβει δεδομένα
+          ανηλίκου, θα τα διαγράψουμε άμεσα.
+        </p>
+
+        <!-- 11 -->
+        <h2 id="changes">11. Αλλαγές πολιτικής</h2>
+        <p>
+          Ενδέχεται να ενημερώνουμε την παρούσα πολιτική περιοδικά. Σε περίπτωση
+          ουσιαστικών αλλαγών, θα σας ειδοποιήσουμε μέσω email εφόσον είστε
+          εγγεγραμμένοι στη λίστα early access. Η ημερομηνία «Τελευταία ενημέρωση»
+          στην κορυφή της σελίδας αντικατοπτρίζει πάντα την πιο πρόσφατη έκδοση.
+        </p>
+
+        <!-- 12 -->
+        <h2 id="contact">12. Επικοινωνία</h2>
+        <p>
+          Για ερωτήματα, αιτήματα άσκησης δικαιωμάτων ή οποιοδήποτε ζήτημα
+          σχετικό με τα προσωπικά σας δεδομένα:
+        </p>
+        <ul>
+          <li>Email: <a href="mailto:privacy@fundlab.gr">privacy@fundlab.gr</a></li>
+          <li>Γενική επικοινωνία: <a href="mailto:hello@fundlab.gr">hello@fundlab.gr</a></li>
+        </ul>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="brand">
+        <span class="brand-mark">◆</span>
+        <span class="brand-name">FundLab</span>
+      </div>
+      <div class="footer-links">
+        <a href="index.html#how">Πώς λειτουργεί</a>
+        <a href="index.html#faq">FAQ</a>
+        <a href="mailto:hello@fundlab.gr">Επικοινωνία</a>
+      </div>
+      <div class="footer-copy">© 2026 FundLab — Made with ◆ in Greece</div>
+    </div>
+  </footer>
+
+</body>
+</html>
