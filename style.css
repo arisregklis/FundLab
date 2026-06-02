@@ -586,6 +586,20 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 800; letter-spac
 }
 .form-success h3 { font-size: 24px; margin-bottom: 8px; }
 .form-success p { color: var(--text-2); }
+.form-error {
+  background: rgba(236,72,153,0.1);
+  border: 1px solid rgba(236,72,153,0.35);
+  border-radius: var(--radius-lg);
+  padding: 40px;
+  max-width: 520px;
+  margin: 0 auto;
+  color: #fff;
+  text-align: center;
+}
+.form-error h3 { font-size: 24px; margin-bottom: 8px; }
+.form-error p { color: rgba(255,255,255,0.75); }
+.form-error a { color: #fff; text-decoration: underline; text-underline-offset: 2px; }
+.check-err { background: #ec4899; }
 
 /* ============ FAQ ============ */
 .faq { max-width: 760px; margin: 0 auto; }

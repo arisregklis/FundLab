@@ -2,16 +2,20 @@
 (function () {
   const form = document.getElementById('early-form');
   const success = document.getElementById('form-success');
+  const errorBox = document.getElementById('form-error');
   if (!form) return;
 
-  // Optional: paste your Formspree / Web3Forms endpoint here
-  // e.g. 'https://formspree.io/f/xxxxxx' or 'https://api.web3forms.com/submit'
-  const ENDPOINT = '';
+  const ENDPOINT = 'https://api.web3forms.com/submit';
 
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
+
+    errorBox.hidden = true;
+
     const data = new FormData(form);
     const payload = {
+      access_key: 'aeb566d0-0fbb-48f0-8c12-442534c89eb1',
+      subject: 'FundLab Early Access — νέα εγγραφή',
       email: (data.get('email') || '').toString().trim(),
       role: data.get('role'),
       city: data.get('city'),
@@ -38,15 +42,27 @@
       localStorage.setItem('fundlab_early', JSON.stringify(prev));
     } catch (_) {}
 
-    // Send to endpoint if configured
+    // Send to endpoint if configured; surface real errors
     if (ENDPOINT) {
+      const btn = form.querySelector('button[type="submit"]');
+      const origText = btn.textContent;
+      btn.disabled = true;
+      btn.textContent = 'Αποστολή…';
+
       try {
-        await fetch(ENDPOINT, {
+        const res = await fetch(ENDPOINT, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
           body: JSON.stringify(payload),
         });
-      } catch (_) { /* silent */ }
+        if (!res.ok) throw new Error('bad status');
+      } catch (_) {
+        btn.disabled = false;
+        btn.textContent = origText;
+        errorBox.hidden = false;
+        errorBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        return;
+      }
     }
 
     form.hidden = true;
